@@ -1,13 +1,8 @@
-<OpenSearchDescription 
-	xmlns="http://a9.com/-/spec/opensearch/1.1/"
-    xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-
-		<ShortName>opensearch</ShortName>
-  		<Description>is a test implementation of opensearch standard</Description>
-  		<InputEncoding>utf-8</InputEncoding>
-		<Image width="16" height="16" type="image/x-icon">icon.ico</Image>
-
-		<Url type="text/html" template="https://opensearch.com"/>
-  		<moz:SearchForm>https://opensearch.com/search</moz:SearchForm>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>opensearch</ShortName>
+  <Description>Simple opensearch spec implementation</Description>
+  <Contact>admin@example.com</Contact>
+  <Url type="text/html"
+       template="https://crimera.github.io/opensearch-standard/?q={searchTerms}"/>
 </OpenSearchDescription>
