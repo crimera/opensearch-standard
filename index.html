@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OpenSearch</title>
+		<link
+			rel="search"
+			type="application/opensearchdescription+xml"
+			title="opensearch"
+  			href="/searchdescription.xml" />
+    </head>
+    <body>
+		<form id="search-form" class="search-container">
+        	<input type="text" id="query">
+			<input type="submit" value="Search">
+    	</form>
+
+		<script>
+		 document.getElementById('search-form').addEventListener('submit', function(e) {
+            e.preventDefault();	
+
+			let query = document.getElementById("query").value
+			alert(query)
+		})
+		</script>
+    </body>
+	<style>
+		.search-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			gap: 10px;
+		}
+	</style>
+</html>
