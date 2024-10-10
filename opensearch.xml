@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>opensearch</ShortName>
+  <LongName>SearXNG metasearch</LongName>
+  <Description>SearXNG is a metasearch engine that respects your privacy.</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+	<Image type="image/x-icon">https://crimera.github.io/opensearch-standard/favicon.ico</Image>
+	<Url rel="results" type="text/html" method="GET" template="https://crimera.github.io/opensearch-standard?q={searchTerms}"/>
+	<Url rel="self" type="application/opensearchdescription+xml"  method="GET" template="https://crimera.github.io/opensearch-standard/opensearch.xml" />
+  <Query role="example" searchTerms="SearXNG" />
+  <moz:SearchForm>https://crimera.github.io/opensearch-standard</moz:SearchForm>
+</OpenSearchDescription>
